@@ -10,6 +10,7 @@ phases:
   pre_build:
     commands:
       - echo Pre_build Phase
+      - rm package-lock.json
       - npm install --legacy-peer-deps
   build:
     commands:
